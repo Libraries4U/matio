@@ -1,7 +1,7 @@
 #ifndef _plugin_matio_matio_h_
 #define _plugin_matio_matio_h_
 
-#include "./lib/matio.h"
+#include <plugin/matio/lib/matio.h>
 
 namespace Upp {
 

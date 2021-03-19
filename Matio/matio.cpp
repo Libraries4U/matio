@@ -1,7 +1,7 @@
 #include <Core/Core.h>
 
 #include "matio.h"
-#include "lib/matioConfig.h"
+#include <plugin/matio/lib/matioConfig.h>
 
 namespace Upp {
 	
@@ -62,7 +62,7 @@ bool MatFile::Create(String fileName, mat_ft version) {
 	
 	time_t t = time(NULL);
 	String header = Format("MATLAB 5.0 MAT-file, Platform: %s, "
-                "Created by: libmatio v%d.%d.%d on %s. U++ wrapper Bazaar/plugin/matio <https://www.ultimatepp.org/>", MATIO_PLATFORM,
+                "Created by: libmatio v%d.%d.%d on %s. U++ wrapper plugin/matio", MATIO_PLATFORM,
                 MATIO_MAJOR_VERSION, MATIO_MINOR_VERSION, MATIO_RELEASE_LEVEL,
                 ctime(&t));
 	mat = Mat_CreateVer(fileName, header, version);

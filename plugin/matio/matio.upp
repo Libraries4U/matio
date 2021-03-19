@@ -1,4 +1,4 @@
-description "MATLAB MAT file I/O library\3770,128,128";
+description "MATLAB MAT file I/O library\37744,169,203";
 
 options(BUILDER_OPTION) NOWARNINGS;
 
@@ -9,9 +9,6 @@ options
 	-DHAVE_ZLIB;
 
 file
-	matio.cpp,
-	matio.h,
-	matio.tpp,
 	lib\mat.c,
 	lib\matio.h,
 	lib\endian.c,
